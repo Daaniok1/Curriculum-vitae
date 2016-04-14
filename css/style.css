@@ -1,0 +1,330 @@
+body {
+    font-family: 'Open Sans', Comic, Tahoma;
+    font-weight: 400;
+    font-size: 14px;
+    color: #363636;
+    background: #EDEDED;	
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+a {
+	color: #545454;
+	text-decoration: none;
+	
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #9D37A3;
+}
+
+
+/** -------------------- LAYOUT & GENERAL  ----------------------*/
+
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 80px;
+	margin-bottom: 15px;
+	background: #ffffff;
+}
+
+.row {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }*/
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+
+.col-10  {width: 10%}
+.col-20  {width: 20%}
+.col-30  {width: 30%}
+.col-40  {width: 40%}
+.col-50  {width: 50%}
+.col-60  {width: 60%}
+.col-70  {width: 70%}
+.col-80  {width: 80%}
+.col-90  {width: 90%}
+.col-100 {width: 100%}
+/** -------------------- END LOYOUT ------------------ **/
+
+
+/** -------------------- HEADER  ----------------------*/
+header {
+
+}
+	h1 {
+		text-transform: uppercase;
+		font-size: 1.8em;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
+		h1 span {
+			color: #2E79F2;
+		}
+
+	#photo-header {
+		text-align: center;
+		border-bottom-color: #DEDEDE;
+    	border-bottom-width:3px;	
+    	border-bottom-style:double;
+
+    	margin-bottom: 10px;
+
+	}
+
+		#photo{ 
+
+		}
+			#photo img {
+			    width: 170px;
+			    height: 170px;
+			    margin-top: -75px;
+			    border-radius: 50%;
+			    padding: 8px;
+			    background-color: #EDEDED;
+			}
+
+	.menu {
+
+	}
+		.menu ul {
+			list-style-type: none;
+			padding: 0;			
+			margin: auto;
+			text-align: center;
+		}
+
+		.menu ul li {
+			display: inline-block;
+			position: relative;
+		}
+
+		.menu ul li a {
+				background: black;
+				color: white;
+				font-size: 12px;
+				padding: 5px;
+				text-decoration: none;
+				display: block;
+				
+				
+		}
+
+
+		.menu ul li a:hover {
+				background: #333;	
+		}
+
+		.menu ul li ul {
+			
+			position: absolute;
+			top: 27px;
+			left: 0;
+			list-style-type: none;
+			padding: 0;
+
+			display: none;
+			height: auto;
+
+
+		}
+
+		.menu ul li:hover ul {
+			display: block;
+		}
+
+		.menu ul li ul li {
+			display: block;
+
+			width: 200px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 12px;
+			text-align: left;
+			margin: 0;
+		}
+
+/** -------------------- END HEADER ------------------ **/
+
+/** -------------------- SECTION ------------------ **/
+section {
+
+}
+	h2 {
+		color: #2E79F2;
+		text-transform: uppercase;
+	}
+	h2::before {
+		content: "// ";
+	}
+
+	
+	.about {
+
+	}
+
+	.education {
+
+	}
+	.education ul{
+		list-style: none;
+		margin:0;
+		padding: 0;	
+	}
+		.education .year {
+		    font-size: 1em;
+		    font-weight: bold;
+		}
+		
+		.education .description {
+			background: #F5F5F5;
+			border-bottom: 1px solid #F5F5F5;
+			padding: 10px;
+			margin-bottom: 20px;
+			position: relative;
+			box-sizing: border-box; 
+		}
+
+		.education .description h3, .education .description p{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.education .description p::after {
+			content: "";
+			position: absolute;
+			border: 8px solid transparent ;
+			border-right: 8px solid #F5F5F5 ;
+			top: 5px;
+			left: -16px;
+		}
+
+
+	.experience {}
+
+
+		.job .where {
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+
+		.job .year {
+			font-size: 0.9em;
+			opacity: 0.7;
+		}
+
+		.job .month{
+			font-size: 0.7em;
+			opacity: 0.7;
+		}
+
+		.job .proffesion {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 1.2em;
+		}
+
+		.job .description {
+			text-align: justify;
+			margin-top: 0;
+		}
+
+
+	.skills {
+		list-style-type: none;
+		margin:0;
+		padding: 0;
+	}
+		.skills-item {				
+			color: #FFFFFF;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 2px 0 2px 5px;
+			margin-top: 5px;				
+			background: #2E79F2;
+			
+		}
+		.skills-item[data-percent="10"] { width: 10% }
+		.skills-item[data-percent="20"] { width: 20% }
+		.skills-item[data-percent="30"] { width: 30% }
+		.skills-item[data-percent="40"] { width: 40% }
+		.skills-item[data-percent="50"] { width: 50% }
+		.skills-item[data-percent="60"] { width: 60% }
+		.skills-item[data-percent="70"] { width: 70% }
+		.skills-item[data-percent="80"] { width: 80% }
+		.skills-item[data-percent="90"] { width: 90% }
+	.lang {
+
+	}
+		.item-lang {
+		    border-bottom: 1px dotted #DDD;
+		    margin-bottom: 5px;
+		    padding-bottom: 5px;				
+
+		}
+			.icon-start {
+				background: url(../image/star-grey.png) no-repeat;
+				float: right;
+				width: 200px;
+				height: 14px;
+			}
+				.icon-start-red {
+					background: url(../image/star-red.png);						
+					height: 14px;
+				}
+
+	.hobby {
+		background: #A75265;
+		color: #FFFFFF;
+		padding: 5px;
+		font-weight: bold;
+		margin-bottom: 5px;			
+		font-size: 0.8em;
+	}
+
+
+/** -------------------- END SECTION ------------------ **/
+
+/** -------------------- FOOTER ------------------ **/
+footer {
+	margin-bottom: 20px;
+}
+
+footer p{
+	text-align: right;
+	font-size: 0.8em;
+	padding-top: 5px;
+	border-top: 1px solid #DDDDDD;
+
+}
+/** -------------------- END FOOTER ------------------ **/
